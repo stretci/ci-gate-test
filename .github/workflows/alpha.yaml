@@ -21,3 +21,4 @@ jobs:
           echo "Running alpha tests..."
           sleep 15
           echo "Alpha tests passed."
+          exit 1
