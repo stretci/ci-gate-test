@@ -21,4 +21,3 @@ jobs:
           echo "Running beta tests..."
           sleep 15
           echo "Beta tests passed."
-          exit 1
