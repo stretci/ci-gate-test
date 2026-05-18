@@ -1,0 +1,23 @@
+name: Gamma
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - gamma/**
+      - .github/workflows/gamma.yaml
+  pull_request:
+    paths:
+      - gamma/**
+      - .github/workflows/gamma.yaml
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tests
+        run: |
+          echo "Running gamma tests..."
+          sleep 15
+          echo "Gamma tests passed."

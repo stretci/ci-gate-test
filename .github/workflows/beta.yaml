@@ -1,0 +1,23 @@
+name: Beta
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - beta/**
+      - .github/workflows/beta.yaml
+  pull_request:
+    paths:
+      - beta/**
+      - .github/workflows/beta.yaml
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tests
+        run: |
+          echo "Running beta tests..."
+          sleep 15
+          echo "Beta tests passed."

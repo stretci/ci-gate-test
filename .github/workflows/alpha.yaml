@@ -1,0 +1,23 @@
+name: Alpha
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - alpha/**
+      - .github/workflows/alpha.yaml
+  pull_request:
+    paths:
+      - alpha/**
+      - .github/workflows/alpha.yaml
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tests
+        run: |
+          echo "Running alpha tests..."
+          sleep 15
+          echo "Alpha tests passed."
