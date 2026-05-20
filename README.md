@@ -1,5 +1,7 @@
 # ci-gate-test
 
+Test
+
 Experimental repository for validating ci-gate.
 
 ## Structure
