@@ -3,7 +3,6 @@ name: Beta
 on:
   push:
     branches:
-      - main
       - 'gh-readonly-queue/**'
     paths:
       - beta/**
