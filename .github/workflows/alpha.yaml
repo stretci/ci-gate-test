@@ -3,7 +3,6 @@ name: Alpha
 on:
   push:
     branches:
-      - main
       - 'gh-readonly-queue/**'
     paths:
       - alpha/**
