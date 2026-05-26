@@ -2,7 +2,9 @@ name: Gamma
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - 'gh-readonly-queue/**'
     paths:
       - gamma/**
       - .github/workflows/gamma.yaml

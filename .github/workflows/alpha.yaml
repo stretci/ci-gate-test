@@ -2,7 +2,9 @@ name: Alpha
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - 'gh-readonly-queue/**'
     paths:
       - alpha/**
       - .github/workflows/alpha.yaml

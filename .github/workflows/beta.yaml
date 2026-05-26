@@ -2,7 +2,9 @@ name: Beta
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+      - 'gh-readonly-queue/**'
     paths:
       - beta/**
       - .github/workflows/beta.yaml
