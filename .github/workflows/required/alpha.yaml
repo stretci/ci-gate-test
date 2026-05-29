@@ -1,0 +1,10 @@
+# ci-gate required workflow configuration
+#
+# The single "ci-gate" check run resolves to success once every workflow listed
+# here is either confirmed successful or predicted-skipped (paths didn't match).
+#
+# Branch protection should require only the check named "ci-gate".
+
+required-workflows:
+  - name: "Alpha"
+    workflow: ".github/workflows/alpha.yaml"
